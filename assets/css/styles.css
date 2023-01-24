@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: #8570a5;
+  color: #7099a5;
 }
 
 button {
@@ -18,7 +18,7 @@ button {
   margin: 5px;
   cursor: pointer;
   font-size: 100%;
-  background-color: #563d7c;
+  background-color: #3d637c;
   border-radius: 5px;
   padding: 2px 10px;
   color: white;
@@ -27,11 +27,15 @@ button {
 }
 
 button:hover {
-  background-color: #8570a5;
+  background-color: #7099a5;
 }
 
 .choices button {
   display: block;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 input[type="text"] {
@@ -39,18 +43,23 @@ input[type="text"] {
 }
 
 ol {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-left: 0px;
   max-height: 400px;
   overflow: auto;
 }
 
 li {
+  display: block;
   padding: 5px;
   list-style: decimal inside none;
 }
 
 li:nth-child(odd) {
-  background-color: #f3edfc;
+  background-color: #edfafc;
 }
 
 .wrapper {
@@ -63,6 +72,10 @@ li:nth-child(odd) {
 }
 
 .start {
+  text-align: center;
+}
+
+.questions {
   text-align: center;
 }
 
