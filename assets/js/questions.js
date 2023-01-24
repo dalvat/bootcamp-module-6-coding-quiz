@@ -1,72 +1,72 @@
 let quizQuestions = [
   [
-    ["question1", 1],
-    ["answer1.1", true],
-    ["answer1.2", false],
-    ["answer1.3", false],
-    ["answer1.4", false]
+    ['What information goes in the <head> tag of a HTML file?', 1],
+    ['All information you want to display on the webpage', false],
+    ['Metadata and the page title', true],
+    ['Links to all external JavaScript and CSS files', false],
+    ['None of the above', false]
   ],
   [
-    ["question2", 2],
-    ["answer2.1", true],
-    ["answer2.2", false],
-    ["answer2.3", false],
-    ["answer2.4", false]
+    ['How do you correctly assign a class to a HTML element?', 2],
+    ['<a>className is className</a>', false],
+    ['<a></class="className"a>', false],
+    ['<a class="className"></a>', true],
+    ['<class="className"><a>Text</a>', false]
   ],
   [
-    ["question3", 3],
-    ["answer3.1", true],
-    ["answer3.2", false],
-    ["answer3.3", false],
-    ["answer3.4", false]
+    ['How do you reference the ID of an element in CSS code?', 3],
+    ['#id-name', true],
+    ['.idName', false],
+    ['~id-name', false],
+    ['#{idName}', false]
   ],
   [
-    ["question4", 4],
-    ["answer4.1", true],
-    ["answer4.2", false],
-    ["answer4.3", false],
-    ["answer4.4", false]
+    ['What type of query can you use to make a page responsive to different screen sizes?', 4],
+    ['HTML screen size adjuster', false],
+    ['JavaScript jQuery', false],
+    ['CSS Multimedia Argument', false],
+    ['CSS Media Query', true]
   ],
   [
-    ["question5", 5],
-    ["answer5.1", true],
-    ["answer5.2", false],
-    ["answer5.3", false],
-    ["answer5.4", false]
+    ['Which of the following is a CSS framework?', 5],
+    ['Shoelaces', false],
+    ['VelcroAid', false],
+    ['Bootstrap', true],
+    ['Belt-and-Buckle', false]
   ],
   [
-    ["question6", 6],
-    ["answer6.1", true],
-    ["answer6.2", false],
-    ["answer6.3", false],
-    ["answer6.4", false]
+    ['How many columns make up the Bootstrap Grid System?', 6],
+    ['12', true],
+    ['10', false],
+    ['4', false],
+    ['6', false]
   ],
   [
-    ["question7", 7],
-    ["answer7.1", true],
-    ["answer7.2", false],
-    ["answer7.3", false],
-    ["answer7.4", false]
+    ['How do you link a JavaScript file to a HTML file?', 7],
+    ['Add a "!JS" query within a <link> element anywhere in the HTML file', false],
+    ['Add a <script> element with the file location within the <body> tag', true],
+    ['Add a <script> element and a <url> tag within the <head> tag', false],
+    ['Add a <div> element within the CSS file', false]
   ],
   [
-    ["question8", 8],
-    ["answer8.1", true],
-    ["answer8.2", false],
-    ["answer8.3", false],
-    ["answer8.4", false]
+    ['Which file type is essential to display a webpage in a browser?', 8],
+    ['.html', true],
+    ['.css', false],
+    ['.jpeg', false],
+    ['.docx', false]
   ],
   [
-    ["question9", 9],
-    ["answer9.1", true],
-    ["answer9.2", false],
-    ["answer9.3", false],
-    ["answer9.4", false]
+    ['What does CSS stand for?', 9],
+    ['Computer Service Support', false],
+    ['Central Sophisticated Service', false],
+    ['Cataract Style Structure', false],
+    ['Cascading Style Sheet', true]
   ],
   [
-    ["question10", 10],
-    ["answer10.1", true],
-    ["answer10.2", false],
-    ["answer10.3", false],
-    ["answer10.4", false]
+    ['What is the correct way to call a function in JavaScript?', 10],
+    ['functionName();', true],
+    ['call functionName;', false],
+    ['get functionName[];', false],
+    ['recall {functionName};', false]
   ],
 ];

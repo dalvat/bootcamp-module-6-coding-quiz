@@ -12,7 +12,7 @@
   <body>
     <div class="scores"><a href="highscores.html">View Highscores</a></div>
 
-    <div class="timer">Time: <span id="time">0</span></div>
+    <div id="timer" class="hide">Time Remaining: <span id="time"></span></div>
 
     <div class="wrapper">
       <div id="start-screen" class="start">
@@ -31,10 +31,10 @@
       </div>
 
       <div id="end-screen" class="hide">
-        <h2>Quiz complete!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter initials: <input type="text" id="initials" max="3" />
+        <h2 id="end-title">Quiz complete!</h2>
+        <p id="end-message">Your final score is <span id="final-score"></span>.</p>
+        <p id="end-input">
+          Enter initials: <input type="text" placeholder="e.g. ABC" id="initials" max="3" />
           <button id="submit">Submit</button>
         </p>
       </div>
