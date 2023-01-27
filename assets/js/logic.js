@@ -22,6 +22,28 @@ let correctAnswers = 0;
 let wrongAnswers = 0;
 let timeLeft = 29;
 let timePenalty = false;
+let initials
+let score
+let timeRemaining
+
+
+let storedInitials = JSON.parse(localStorage.getItem("initials"));
+let storedHighscore = JSON.parse(localStorage.getItem("highscore"));
+let storedTimeLeft = JSON.parse(localStorage.getItem("time-left"));
+
+if(storedInitials !== null) {
+  initials = storedInitials;
+};
+
+if(storedHighscore !== null) {
+  score = storedHighscore;
+};
+
+if(storedTimeLeft !== null) {
+  timeRemaining = storedTimeLeft;
+};
+
+
 
 // function to generate random number with the ability to exclude certain values.
 // this is useful in this instance to avoid the same question being picked multiple times.
@@ -269,10 +291,10 @@ scoreSubmit.addEventListener("click", function(event) {
 // the function gets the timeRemaining from the timeLeft variable.
 // all 3 items are stored in localStorage to be used in the 'highscores.html' file.
 function storeHighscoreList() {
-  initials = scoreInitials.value;
-  score = calculateScore();
-  timeRemaining = timeLeft;
-  localStorage.setItem('highscore', score);
-  localStorage.setItem('initials', initials);
-  localStorage.setItem('time-left', timeRemaining);
+  initials.push(scoreInitials.value);
+  score.push(calculateScore());
+  timeRemaining.push(timeLeft);
+  localStorage.setItem('highscore', JSON.stringify(score));
+  localStorage.setItem('initials', JSON.stringify(initials));
+  localStorage.setItem('time-left', JSON.stringify(timeRemaining));
 };
